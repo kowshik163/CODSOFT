@@ -1,0 +1,265 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f0f4f8;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(45deg, #4c6ef5, #3b5bdb);
+    color: white;
+    padding: 20px 30px;
+}
+
+header h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #ffcc00;
+}
+
+.abt,
+#intro,
+#skl,
+#proj {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px 20px;
+}
+
+.abt {
+    margin-bottom: 40px;
+}
+
+#pr-img,
+#int-img {
+    height: 70vh;
+    margin-right: 30px;
+}
+
+#pr-img img,
+#int-img img {
+    height: 85%;
+    width: auto;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+#pr-img img:hover,
+#int-img img:hover {
+    transform: scale(1.05);
+}
+
+#pr-text,
+.in-text {
+    padding: 20px;
+    max-width: 600px;
+}
+#intro {
+    background-color: #fff;
+    padding: 40px 20px;
+}
+
+h1,
+h2 {
+    color: #2a2a2a;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+#skl {
+    flex-direction: row-reverse;
+    margin-top: 0;
+}
+
+.skl-img {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.skl-img img {
+    width: auto;
+    height: 200px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.skl-img img:hover {
+    transform: scale(1.05);
+}
+#proj {
+    background-color: #fff;
+    padding: 40px 20px;
+}
+
+#proj h1 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    text-align: center;
+    color: #2a2a2a;
+}
+
+.projcardcont {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.projcard {
+    background-color: #f7f7f7;
+    border-radius: 15px;
+    width: 280px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projcard img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.projcard h3 {
+    background-color: #ffcc00;
+    padding: 15px;
+    font-size: 1.2rem;
+    text-align: center;
+    color: #333;
+}
+
+.projcard p {
+    padding: 15px;
+    font-size: 1rem;
+    color: #666;
+    text-align: center;
+}
+
+.projcard a {
+    text-decoration: none;
+    background-color: #4c6ef5;
+    color: white;
+    font-weight: 600;
+    padding: 12px;
+    display: block;
+    text-align: center;
+    border-radius: 0 0 15px 15px;
+    transition: background-color 0.3s ease;
+}
+
+.projcard a:hover {
+    background-color: #3b5bdb;
+}
+
+.projcard:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #4c6ef5;
+    color: white;
+    font-size: 1rem;
+}
+
+footer p {
+    margin: 0;
+}
+#contact {
+    background-color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.contact-info div {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.contact-info i {
+    font-size: 1.5rem;
+    color: #4c6ef5;
+}
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    .abt, #intro, #skl {
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 40px 20px;
+    }
+
+    .skl-img {
+        flex-direction: column;
+    }
+
+    .skl-img img {
+        max-width: 90%;
+        margin-bottom: 10px;
+    }
+
+    .projcardcont {
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .projcard {
+        width: 80%;
+    }
+}
