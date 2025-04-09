@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f0f4f8;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(45deg, #4c6ef5, #3b5bdb);
+    color: white;
+    padding: 20px 30px;
+}
+
+header h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #ffcc00;
+}
+
+#intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 20px;
+}
+
+#intro img {
+    height: 55vh;
+    width: auto;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+#intro img:hover {
+    transform: scale(1.05);
+}
+
+#intro-text {
+    padding: 20px;
+    max-width: 600px;
+}
+
+h1,
+h2 {
+    color: #2a2a2a;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.cta-btn {
+    display: inline-block;
+    background-color: #4c6ef5;
+    color: white;
+    font-weight: 600;
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    margin-top: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #3b5bdb;
+}
+
+section {
+    padding: 50px 20px;
+}
+
+.services,
+.projects {
+    background-color: #f7f7f7;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.card {
+    flex: 1;
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.project-card {
+    background-color: #f7f7f7;
+    border-radius: 15px;
+    padding: 20px;
+    flex: 1;
+}
+
+.project-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #4c6ef5;
+    color: white;
+    font-size: 1rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+#contact-info {
+    margin-top: 20px;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+#contact-info a {
+    text-decoration: none;
+    color: #4c6ef5;
+}
+
+#contact-info a:hover {
+    text-decoration: underline;
+}
+
+.contact-item {
+    margin-bottom: 15px;
+}
+
+form {
+    margin-top: 20px;
+    width: 60%;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+form input,
+form textarea,
+form button {
+    width: 70%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #333;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    background-color: #f9f9f9;
+}
+
+form input[type="submit"],
+form button {
+    background-color: #4c6ef5;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover,
+form button:hover {
+    background-color: #3b5bdb;
+}
+
+form input:focus,
+form textarea:focus {
+    outline: none;
+    border-color: #4c6ef5;
+    background-color: #fff;
+}
+
+form label {
+    font-weight: 600;
+    margin-bottom: 10px;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    #intro {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: center;
+    }
+
+    #intro img {
+        margin-bottom: 20px;
+        max-width: 80%;
+    }
+
+    #intro-text {
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    form {
+        width: 100%;
+    }
+}
